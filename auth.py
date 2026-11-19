@@ -8,6 +8,7 @@ from getpass import getpass
 
 from storage import load_users, save_users, user_documents_dir
 
+from UserSession import UserSession
 
 def register():
     """Create a new user account and persist it in users.json."""
@@ -52,8 +53,8 @@ def login():
 
     account = users.get(username)
     if account is None or account.get("password") != password:
-        print("Incorrect username or password.")
+        print("\nIncorrect username or password.")
         return None
 
     print(f"Welcome, {username}!")
-    return username
+    return UserSession(username, data_key=None, private_key=None, certificate=None)

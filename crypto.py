@@ -5,7 +5,7 @@ Implement and test the cryptographic operations here, not in the menu code.
 """
 
 
-def encrypt_document(username):
+def encrypt_document(UserSession):
     print("\n--- Upload and encrypt a document ---")
     file_path = input("Path to the document: ").strip()
     if not file_path:
@@ -20,7 +20,7 @@ def encrypt_document(username):
     print(f"Selected file: {file_path}")
 
 
-def decrypt_document(username):
+def decrypt_document(UserSession):
     print("\n--- Download and decrypt a document ---")
     # TODO: Let the user select an encrypted document.
     # TODO: Load its key safely and decrypt/authenticate with AES-GCM.
@@ -28,14 +28,14 @@ def decrypt_document(username):
     print("Decryption is not implemented yet.")
 
 
-def sign_document(username):
+def sign_document(UserSession):
     print("\n--- Sign a document ---")
     # TODO: Load the user's private key safely.
     # TODO: Sign the document bytes using RSA-PSS and SHA-256.
     print("Digital signing is not implemented yet.")
 
 
-def verify_signature(username):
+def verify_signature(UserSession):
     print("\n--- Verify a document signature ---")
     # TODO: Load the document, signature, and trusted public key/certificate.
     # TODO: Verify the signature and report success/failure clearly.
