@@ -1,4 +1,4 @@
-# Secure Document Vault — first draft
+# Secure Document Vault — draft  (IN PROGRESS)
 
 A menu-based terminal prototype for a cryptography course project.
 
@@ -28,14 +28,9 @@ python main.py
 
 The `python_text_menu` package adds an `Exit` option automatically to each menu.
 
-## Important prototype limitation
-
-Passwords are temporarily stored in plaintext in `data/users.json`. This is only for a classroom UI prototype; do not use real passwords or real sensitive documents. Before real use, replace this with password hashing, implement safe key management, and add the cryptographic operations.
-
 ## Planned next steps
 
-1. Hash passwords and improve account handling.
-2. Implement file encryption/decryption with authenticated encryption (for example AES-GCM).
-3. Implement digital signatures and verification (for example RSA-PSS with SHA-256).
-4. Add certificate handling if required by the assignment.
-5. Add tests and document the design decisions.
+1. Implement file encryption/decryption with authenticated encryption (for example AES-GCM).
+2. Implement digital signatures and verification (for example RSA-PSS with SHA-256).
+3. Add certificate handling if required by the assignment.
+4. Add tests and document the design decisions.
